@@ -34,13 +34,19 @@ function applyNameToProjectModule(projectFolder, name) {
 
 function applyNameToJavaScriptFilesContent(projectFolder, name) {
   glob.sync(path.join(projectFolder, '**', '*.js')).forEach(javaScriptFilePath => {
-    if (javaScriptFilePath.toLowerCase().startsWith(path.join(projectFolder, 'node_modules').toLocaleLowerCase().replace(/\\/g, '/'))) return;
+    if (javaScriptFilePath.toLowerCase().startsWith(path.join(projectFolder, 'node_modules').toLocaleLowerCase().replace(/\\/g, '/'))) {
+      return;
+    }
 
-    let javaScriptFileContent = fs.readFileSync(javaScriptFilePath, 'utf8');
-    javaScriptFileContent = javaScriptFileContent.replace(/JssReactWeb/ig, name);
-    fs.unlinkSync(javaScriptFilePath);
-    fs.writeFileSync(javaScriptFilePath, javaScriptFileContent);
+    applyNameToJavaScriptFileContent(javaScriptFilePath, name);
   });
+}
+
+function applyNameToJavaScriptFileContent(javaScriptFilePath, name) {
+  let javaScriptFileContent = fs.readFileSync(javaScriptFilePath, 'utf8');
+  javaScriptFileContent = javaScriptFileContent.replace(/JssReactWeb/ig, name);
+  fs.unlinkSync(javaScriptFilePath);
+  fs.writeFileSync(javaScriptFilePath, javaScriptFileContent);
 }
 
 function applyNameToProjectModuleFolder(projectFolder, name) {

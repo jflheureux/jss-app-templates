@@ -3,7 +3,7 @@ import React from 'react';
 import { StaticRouter, matchPath } from 'react-router-dom';
 import { renderToStringWithData } from 'react-apollo';
 import Helmet from 'react-helmet';
-import GraphQLClientFactory from '../src/lib/GraphQLClientFactory';
+import GraphQLClientFactory from '../src/Foundation/GraphQL/GraphQLClientFactory';
 import config from '../src/temp/config';
 import i18ninit from '../src/Foundation/Translation/i18n';
 import AppRoot, { routePatterns } from '../src/Project/JssReactWeb/AppRoot';
