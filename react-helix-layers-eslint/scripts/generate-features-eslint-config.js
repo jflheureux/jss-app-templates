@@ -86,6 +86,10 @@ function generateEslintConfiguration() {
       "error",
       {
         "zones": [
+          {
+            "target": "./src/Feature",
+            "from": "./src/Project"
+          },
 ${zones.join(",\n")}
         ]
       }

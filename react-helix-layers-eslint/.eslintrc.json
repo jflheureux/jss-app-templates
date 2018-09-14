@@ -47,10 +47,6 @@
           {
             "target": "./src/Foundation",
             "from": "./src/Project"
-          },
-          {
-            "target": "./src/Feature",
-            "from": "./src/Project"
           }
         ]
       }
