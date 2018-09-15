@@ -19,7 +19,10 @@
       "node_modules",
       ".png$",
       ".jpg$"
-    ]
+    ],
+    "react": {
+      "version": "16.3.2"
+    }
   },
   "globals": {
     "window": true,
