@@ -1,6 +1,6 @@
 {
   "name": "template-react-helix-layers-eslint",
-  "description": "Application utilizing Sitecore JavaScript Services and React (create-react-app) where the source files have been rearanged in the Helix layers structure with Foundation, Feature, and Project modules.",
+  "description": "Application utilizing Sitecore JavaScript Services and React (create-react-app) where the source files have been rearanged in the Helix layers structure with Foundation, Feature, and Project modules. ESLint validations are run to ensure the Helix modules dependency boundaries.",
   "version": "1.0.0",
   "private": true,
   "config": {
