@@ -1,7 +1,9 @@
 {
   "extends": [
+    "prettier",
     "plugin:import/errors",
     "plugin:import/warnings",
+    "plugin:prettier/recommended",
     "plugin:react/recommended"
   ],
   "parser": "babel-eslint",
@@ -15,6 +17,12 @@
     "react"
   ],
   "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./build/webpack/webpack.eslint.js",
+        "config-index": 1
+      }
+    },
     "import/ignore": [
       "node_modules",
       ".png$",
