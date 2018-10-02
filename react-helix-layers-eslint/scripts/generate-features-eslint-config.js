@@ -30,11 +30,11 @@ function watchEslintConfiguration() {
     `Watching for changes to feature modules in ${featureRootPath}...`
   );
 
-  // TODO: Adjust checks and actions
   chokidar
     .watch(featureRootPath, { ignoreInitial: true, awaitWriteFinish: true })
-    .on("add", writeEslintConfiguration)
-    .on("unlink", writeEslintConfiguration);
+    .on("addDir", writeEslintConfiguration)
+    .on("unlinkDir", writeEslintConfiguration)
+    .on("error", writeEslintConfiguration);
 }
 
 function writeEslintConfiguration() {
