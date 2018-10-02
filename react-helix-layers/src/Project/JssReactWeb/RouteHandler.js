@@ -5,7 +5,7 @@ import { isExperienceEditorActive, dataApi } from '@sitecore-jss/sitecore-jss-re
 import SitecoreContextFactory from '../../Foundation/Context/SitecoreContextFactory';
 import config from '../../temp/config';
 import Layout from './Layout';
-import NotFound from '../../Feature/NotFound/NotFound';
+import NotFound from '../../Feature/Errors/NotFound';
 
 // Dynamic route handler for Sitecore items.
 // Because JSS app routes are defined in Sitecore, traditional static React routing isn't enough -
