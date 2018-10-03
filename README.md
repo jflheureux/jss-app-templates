@@ -2,7 +2,7 @@
 
 ## Custom App Templates for Sitecore JavaScript Services (JSS)
 
-This repository contains [custom application templates](https://jss.sitecore.net/docs/techniques/custom-create-templates) for [JSS](https://jss.sitecore.net/).
+This repository contains [custom application templates](https://jss.sitecore.net/docs/techniques/custom-create-templates) for [JSS](https://jss.sitecore.net/) technical preview 4 (TP4).
 
 Templates are folders in this repository.
 
