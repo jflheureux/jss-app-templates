@@ -14,10 +14,6 @@ jss create <appname> <template-name> --repository jflheureux/jss-app-templates
 
 ### List of Templates in this Repository
 
-#### `react-helix-layers`
+#### `react-helix`
 
-[Sitecore JSS react sample app](https://github.com/Sitecore/jss/tree/master/samples/react) where the source files have been rearanged in the Helix layers structure with Foundation, Feature, and Project modules.
-
-#### `react-helix-layers-eslint`
-
-Same as `react-helix-layers`, with [ESLint](https://eslint.org/) validation of modules dependency flow.
+[Sitecore JSS react sample app](https://github.com/Sitecore/jss/tree/master/samples/react) where the source files have been rearanged in the Helix layers structure with Foundation, Feature, and Project modules. Dependency flow is validated at compilation time using [ESLint](https://eslint.org/).
