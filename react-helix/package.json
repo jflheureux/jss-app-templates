@@ -48,7 +48,7 @@
     "react-i18next": "^7.7.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "2.0.0-next.3e165448",
-    "serialize-javascript": "^1.5.0"
+    "serialize-javascript": "^3.1.0"
   },
   "devDependencies": {
     "@sitecore-jss/sitecore-jss-cli": "^9.0.6",
